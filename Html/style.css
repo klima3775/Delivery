@@ -5,24 +5,18 @@ body{
 *{
     box-sizing: border-box;
 }
-/*---------------------------------------------------------------------- header */
-/*---------------------------------------------------------------------- header */
-/*---------------------------------------------------------------------- header */
-header{
-    width: 100%;
-    
-    background-color: rgb(245, 245, 220);
-}
-.header_line {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.logo{
-    width: 10%;
-}
-.nav_top ul {
+
+/* Стили для шапки */
+header {
+    background-color: rgb(245, 245, 220);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav_top ul {
     display: flex;
     list-style-type: none;
 }
@@ -46,22 +40,14 @@ header{
 
             color: rgb(245, 245, 220);
         }
-
-
-
-/*---------------------------------------------------------------------- main */
-/*---------------------------------------------------------------------- main */
-/*---------------------------------------------------------------------- main */
-main{
+  
+  main {
     display: flex;
-    margin: 0;
-    justify-content: space-between;
     background-color: rgb(42, 88, 130);
     padding: 20px;
-    
-}
-
-.slider{
+  }
+ 
+  .slider{
     border: 2px solid black;
     width: 400px;
     height: 300px;
@@ -70,20 +56,33 @@ main{
     margin-top: 20px;
   
 }
-.sidebar{
-    display:block;
-    width: 20%;
-}
+  
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background-color: rgb(245, 245, 220);
+    padding: 20px;
+  }
+
+  .sidebar {
+    width: 300px;
+    background-color: rgb(245, 245, 220);
+    padding: 20px;
+  }
+
 .BuyTickets{
-    display: flex;
     margin-top: 20px;
     background-color: rgb(245, 245, 220);
     height: 60px;
-    width: 100%;
+    width: 100%;   
 }
 
 .Rozklad{
-    display: flex;
     margin-top: 20px;
     background-color: rgb(245, 245, 220);
     height: 60px;
@@ -91,51 +90,22 @@ main{
 }
 
 .Dopomoga {
-    display: flex;
     margin-top: 20px;
     background-color: rgb(245, 245, 220);
     height: 60px;
     width: 100%;
 }
 
-.Zvernenna{
-    
-    margin-top: 20px;
-    background-color: rgb(245, 245, 220);
-    height: 400px;
-    width: 100%;
-}
-
 .formaCenter{
-    display: flex;
-
     justify-content: center; 
     align-items: center;
-
     width:100%
 }
-
-
-
-h2{
-    text-align: center;
-}
-
-
-/*---------------------------------------------------------------------- footer */
-/*---------------------------------------------------------------------- footer */
-/*---------------------------------------------------------------------- footer */
-footer {
-    width: 100%;
-    
-    display: flex;
-
-    justify-content:center;
-    align-items: center;
-
+  
+  /* Стили для футера */
+  footer {
     background-color: rgb(245, 245, 220);
-    margin-top: 0px;
-    padding: 8px;
-    
-}
-
+    text-align: center;
+    padding: 10px;
+  }
+  

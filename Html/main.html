@@ -1,78 +1,73 @@
 <!DOCTYPE html>
-<html lang="Uk">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/Html/style.css">
 </head>
-<body class="Osnova">  
-    <header>
-        <section class="header_line" >
-            <img class="logo" src="imgs/siteLogo.png" alt="logo">
-            <nav class="nav_top">
-                <ul>
-                    <li><a class="nav_links" href="#About">Про нас</a></li>
-                    <li><a class="nav_links" href="#Main">Головна</a></li>
-                    <li><a class="nav_links" href="#Phone">Контакти</a></li>
-                    <li><a class="nav_links" href="#Transfer">Перевезення</a></li>
-                    <li><a class="nav_links" href="#Work">Вакансії</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header> 
-    <main>
+<body>
+  <header>
+    <section class="header_line" >
+        <img class="logo" src="imgs/siteLogo.png" alt="logo">
+        <nav class="nav_top">
+            <ul>
+                <li><a class="nav_links" href="#About">Про нас</a></li>
+                <li><a class="nav_links" href="#Main">Головна</a></li>
+                <li><a class="nav_links" href="#Phone">Контакти</a></li>
+                <li><a class="nav_links" href="#Transfer">Перевезення</a></li>
+                <li><a class="nav_links" href="#Work">Вакансії</a></li>
+            </ul>
+        </nav>
+    </section>
+  </header>
+
+  <main>
+    <section class="content">
         <div class="slider">
             <p>slider</p>
         </div>
-        <aside class="sidebar">
-            <div class="BuyTickets">Photo BuyTickets</div>
-            <div class="Rozklad">Photo Rozklad</div>
-            <div class="Dopomoga">Photo Dopomoga</div>
-            <div class="Zvernenna"> 
-                  <h2>Звернення</h2>
-                    <div class="formaCenter">
-                        <form action="/Js/obrabotkaForm.js" method="post" class="FormsMain">
-                            <select>
-                                <option value="PassagireService">Пасажирські перевезення</option>
-                                <option value="Coruption">Повідомлення про корупцію</option>
-                                <option value="ElectrionTicket">Електронні квитки</option>
-                                <option value="CargoService">Вантажні перевезення</option>
-                            </select>
-                            <br><br>
-                            
-                            <input id="name" type="text" class="form-control" placeholder="Ім’я" maxlength="32">
-                            <br><br>
-            
-                            <input id="email" type="text" class="form-control" placeholder="Email" maxlength="32">
-                            <br><br>
-            
-                            <input id="_form_phone" type="text" class="form-control" placeholder="Телефон" maxlength="24">
-                            <br><br>
-            
-                            <input id="_form_them" type="text" class="form-control" placeholder="Тема" maxlength="1000">
-                            <br><br>
-            
-                            <textarea id="mesage_form" name="message" class="form-control" placeholder="Повідомлення" rows="5" cols="21"></textarea>
-                            <br><br>
-            
-                            <input type="submit" value="Надіслати">
-                        </form>
-                    </div>
-                
-                </div>
-        </aside>
-    
-    </main>
-    <footer>
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem qui consequuntur sint illo amet corrupti recusandae tempora, dolorum mollitia animi dolores porro iste, reprehenderit cumque omnis aperiam! Id, voluptatum rerum?</p>
-        </section>
+    </section>
+    <aside class="sidebar">
+      <!-- Сайдбар справа -->
+      <div class="Zvernenna"> 
+        <h2>Звернення</h2>
+          <div class="formaCenter">
+              <form action="/Js/obrabotkaForm.js" method="post" class="FormsMain">
+                  <select>
+                      <option value="PassagireService">Пасажирські перевезення</option>
+                      <option value="Coruption">Повідомлення про корупцію</option>
+                      <option value="ElectrionTicket">Електронні квитки</option>
+                      <option value="CargoService">Вантажні перевезення</option>
+                  </select>
+                  <br><br>
+                  
+                  <input id="name" type="text" class="form-control" placeholder="Ім’я" maxlength="32">
+                  <br><br>
+  
+                  <input id="email" type="text" class="form-control" placeholder="Email" maxlength="32">
+                  <br><br>
+  
+                  <input id="_form_phone" type="text" class="form-control" placeholder="Телефон" maxlength="24">
+                  <br><br>
+  
+                  <input id="_form_them" type="text" class="form-control" placeholder="Тема" maxlength="1000">
+                  <br><br>
+  
+                  <textarea id="mesage_form" name="message" class="form-control" placeholder="Повідомлення" rows="5" cols="21"></textarea>
+                  <br><br>
+  
+                  <input type="submit" value="Надіслати">
+              </form>
+          </div>
+    </aside>
+  </main>
 
-        <div class="FotterMenu">
+  <footer>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem qui consequuntur sint illo amet corrupti recusandae tempora, dolorum mollitia animi dolores porro iste, reprehenderit cumque omnis aperiam! Id, voluptatum rerum?</p>
+    </section>
 
-        </div>
-    </footer>
+    <div class="FotterMenu">
 
-        
+    </div>
+  </footer>
+</body>
 </html>
