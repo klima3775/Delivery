@@ -40,41 +40,40 @@ header {
 
             color: rgb(245, 245, 220);
         }
-  
+   /* style main */
   main {
-    display: flex;
     background-color: rgb(42, 88, 130);
-    padding: 20px;
+    padding: 20px;  
   }
- 
+  /* новый класс для семантики и выстройки страницы, почитаешь зачем позже! */
+  .form_and_crutilka{
+    display: flex;
+    
+  }
+  /*крутілка  */
   .slider{
     border: 2px solid black;
-    width: 400px;
-    height: 300px;
+    width: 900px;
+    height: 700px;
     padding: 20px;
     
     margin-top: 20px;
   
 }
   
-  
+  /* секція контент в 1 артиклі  */
   .content {
     flex-grow: 1;
     padding: 20px;
   }
+  /* розмір сайдбара */
+  .sidebar {
+    width: 300px;
+    padding: 20px;
+  }
+
   
-  .sidebar {
-    width: 300px;
-    background-color: rgb(245, 245, 220);
-    padding: 20px;
-  }
-
-  .sidebar {
-    width: 300px;
-    background-color: rgb(245, 245, 220);
-    padding: 20px;
-  }
-
+/* кнопки навігації над формою */
 .BuyTickets{
     margin-top: 20px;
     background-color: rgb(245, 245, 220);
@@ -95,13 +94,82 @@ header {
     height: 60px;
     width: 100%;
 }
-
-.formaCenter{
-    justify-content: center; 
-    align-items: center;
-    width:100%
+/* форма та все що з нею пов'язано */
+.Zvernenna{
+  margin-top: 20px;
+  background-color: rgb(245, 245, 220);
+  align-items: center;
+  height: 400px;
 }
+/* центровка */
+.formaCenter{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width:100%
+}
+/* все для ротейт карток ----------------*/
+
+/* батьківський флекс */
+.rotater {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+/* розмір картки */
+.card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* анімація при наведенні(хочу зробити по кліку) написати треба буде скріпт */
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* ліцева і задня частина каарток */
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+/* ліцева */
+.card-front {
+  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* задня */
+.card-back {
+  background-color: #e74c3c;
+  width: 200px;
+  height: 300px;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* налаштування розміру фоток для задньої частини */
+.card-back img{
+  width: 100%;
+  height: 100%;
   
+}
+
+
   /* Стили для футера */
   footer {
     background-color: rgb(245, 245, 220);
